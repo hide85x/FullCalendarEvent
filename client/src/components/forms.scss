@@ -1,0 +1,127 @@
+.disable {
+    background: grey !important;
+    box-shadow: none !important;
+    filter: none !important;
+    border-radius: 0% !important;
+    transition: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    gap: 15px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 400px;
+  
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        padding: 5px;
+      }
+      input {
+        height: 30px;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        text-align: center;
+        padding: 2px;
+        &:focus {
+          box-shadow: 0 12px 9px -9px black;
+        }
+      }
+    }
+    #create, #login {
+      margin-top: 20px;
+      border: 1px solid transparent;
+      color: white;
+      background: black;
+      height: 30px;
+      transition: all 0.3s ease-in;
+      &:hover {
+        filter: invert(1);
+        border: 2px solid rgb(255, 255, 255);
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 19px 15px 3px rgba(255, 255, 255, 0.616);
+      }
+    }
+  }
+  .Okmsg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 300px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3333;
+    background: rgba(0, 255, 21, 0.884);
+    color: black;
+    font-weight: 200;
+    font-size: 20px;
+    p {
+      margin: 3px auto;
+    }
+  }
+  .msgs {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 300px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3333;
+    background: rgba(255, 0, 0, 0.884);
+    color: black;
+    font-weight: 200;
+    font-size: 20px;
+    p {
+      margin: 3px auto;
+    }
+  }
+   .close {
+      border-radius: none;
+      z-index: 3333;
+      height: 30px;
+      width: 30px;
+      text-decoration: none !important;
+      border: 2px solid black;
+      font-weight: 900;
+      transition: all 0.3s ease-in;
+  
+      &:hover {
+        border-radius: 100%;
+        filter: invert(1);
+        cursor: pointer;
+      }
+    }
+    
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+  .button {
+    margin-top: 20px;
+    border: 1px solid transparent;
+    color: white;
+    background: black;
+    height: 30px;
+    transition: all 0.3s ease-in;
+    &:hover {
+      filter: invert(1);
+      border: 2px solid rgb(255, 255, 255);
+      cursor: pointer;
+      border-radius: 20px;
+      box-shadow: 19px 15px 3px rgba(255, 255, 255, 0.616);
+    }
+  }
