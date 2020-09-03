@@ -16,6 +16,13 @@ export class Event extends Document {
     
     @Prop({})
     color:string
+
+    @Prop({})
+    actors:[string]
+    
+    @Prop({})
+    techs:[string]
+
 }
 
     export const EventSchema = SchemaFactory.createForClass(Event)

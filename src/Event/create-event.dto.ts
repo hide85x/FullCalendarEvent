@@ -7,5 +7,7 @@ export class CreateEventDto {
     start: string
     end: string
     color:string
+    actors:[string]
+    techs:[string]
 
 }

@@ -10,14 +10,16 @@ export class EventService {
     constructor(@InjectModel(Event.name) private eventModel: Model<Event>) { }
 
     async createEvent(createEventDto: CreateEventDto): Promise<any> {
-        const { title, start, end, color} = createEventDto;
+        const { title, start, end, color, actors, techs} = createEventDto;
         console.log(createEventDto)
         try {
             const newEvent = await this.eventModel({
                 title,
                 start,
                 end,
-                color
+                color,
+                actors,
+                techs,
             }).save()//.exec()
             console.log('Weve got new event comming up!')
             return newEvent
